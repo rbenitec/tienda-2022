@@ -76,7 +76,7 @@ public class ProductoRepository {
 		
 		Connection con = ConexionDB.obtenerConexion();
 		
-		String query = "insert to productos(categorias_id, nombre, descripcion, precio, \r\n"
+		String query = "insert into productos(categorias_id, nombre, descripcion, precio, \r\n"
 				+ "stock, imagen_nombre, imagen_tipo, imagen_tamanio)\r\n"+
 				"values (?, ?, ?, ?, ?, ?, ?, ?)";
 		
@@ -145,6 +145,7 @@ public class ProductoRepository {
 		return producto;
 	}
 	
+	//Metodo para Eliminar registros
 	public void eliminar(Integer id)throws Exception{
 		log.info("call Eliminar (id: "+id+")");
 		

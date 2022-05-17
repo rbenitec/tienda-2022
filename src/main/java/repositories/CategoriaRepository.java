@@ -12,6 +12,7 @@ import entities.Categoria;
 import util.ConexionDB;
 
 public class CategoriaRepository {
+	
 	//Listar todo la informacion de categorias
 	
 	private static final Logger log = Logger.getLogger(CategoriaRepository.class);
@@ -41,4 +42,27 @@ public class CategoriaRepository {
 		log.info("lista: "+ lista);
 		return lista;
 	}
+	
+	//Metodo pata Registrar un registro de categoria
+/*	
+	public void registrar(Categoria categoria) throws Exception{
+		//Crear  mi conexion
+		Connection con = ConexionDB.obtenerConexion();
+		
+		String query ="INSERT TO categorias (id,nombre,orden) values (?,?,?)";
+		
+		PreparedStatement stmt = con.prepareStatement(query);
+		stmt.setInt(1, categoria.getId());
+		stmt.setString(2, categoria.getNombre());
+		stmt.setInt(3, categoria.getOrden());
+		stmt.executeUpdate();
+		
+		stmt.close();
+		con.close();
+		
+		log.info("Success");
+		
+	}
+	*/
+	
 }
