@@ -35,6 +35,7 @@ public class CategoriaListarServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		log.info("Get ProductoServiceServlet");
+		log.info("Get ff");
 		
 		try {
 			List<Categoria> categorias = categoriaService.listar();
