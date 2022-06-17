@@ -44,7 +44,7 @@ public class ProductoEliminarServlet extends HttpServlet {
 			
 			////Este es el flash despues de eliminar un registro
 			
-			request.getSession().setAttribute("success", "Registro eliminar satisfactoriamente");
+			request.getSession().setAttribute("success", "Registro eliminar satisfactoriamente!!");
 			
 			response.sendRedirect(request.getContextPath()+ "/ProductoListarServlet");
 			
